@@ -37,7 +37,20 @@ p {
   font-size: 1.3em;
   margin-bottom: 20px;
 }
-.container {
+.tags {
+  display: block;
+}
+.tags .tag {
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #E1E1E1;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+.hero-container {
   display: block;
   margin: 0 auto 0px auto;
   width: 100%;
@@ -46,7 +59,7 @@ p {
   background-image: url(../img/HeroBg.png);
   background-repeat: no-repeat;
 }
-.container .flex-container {
+.hero-container .flex-container {
   align-content: flex-start;
   border-radius: 1em;
   padding: 0 0 0 0;
@@ -56,43 +69,204 @@ p {
   justify-content: center;
   margin: 0 auto;
   width: 80%;
+  max-width: 1200px;
 }
-.container .flex-container .box {
+.hero-container .flex-container .box {
   color: black;
   font-weight: bold;
   text-align: center;
 }
-.container .flex-container .box .logo {
+.hero-container .flex-container .box .logo {
   width: 300px;
   display: block;
   margin: 0 auto 20px auto;
 }
-.container .flex-container .box .logo img {
+.hero-container .flex-container .box .logo img {
   width: 100%;
 }
-.container .flex-container .box h1 {
+.hero-container .flex-container .box h1 {
   text-decoration: underline;
 }
-.container .flex-container .box h4 {
+.hero-container .flex-container .box h4 {
   font-weight: normal;
   display: block;
   width: 45%;
   margin: 0 auto 1em auto;
   word-break: keep-all;
 }
-.container .flex-container .c1 {
+.hero-container .flex-container .c1 {
   background-color: red;
   order: 2;
   flex-grow: 1;
   flex-basis: 50%;
 }
-.container .flex-container .c2 {
-  background-color: blue;
-  order: 3;
-  flex-grow: 3;
+.pain-container {
+  display: block;
+  margin: 0 auto 0px auto;
+  width: 100%;
+  padding: 70px 1.5em 70px 1.5em;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
 }
-.container .flex-container .c3 {
-  background-color: green;
-  order: 1;
-  flex-grow: 2;
+.pain-container h2 {
+  display: block;
+  margin: 0px auto 50px auto;
+  max-width: 1200px;
+  text-align: center;
+  text-decoration: underline;
+}
+.pain-container .flex-container {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  gap: 20px;
+  padding: 20px 10px;
+  max-width: 1200px;
+}
+.pain-container .card {
+  display: block;
+  padding: 0;
+  text-align: center;
+  width: 370px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+}
+.pain-container .card .images img {
+  display: block;
+  width: 100%;
+}
+.pain-container .card h3,
+.pain-container .card p {
+  display: block;
+  padding: 0 20px;
+}
+.pain-container .card p:last-child {
+  display: block;
+  padding: 0 20px 20px 20px;
+}
+.solution-container {
+  display: block;
+  margin: 0 auto 0px auto;
+  width: 100%;
+  padding: 70px 1.5em 70px 1.5em;
+  box-sizing: border-box;
+  background-color: white;
+}
+.solution-container h2 {
+  display: block;
+  margin: 0px auto 50px auto;
+  max-width: 1200px;
+  text-align: center;
+  text-decoration: underline;
+}
+.solution-container .flex-container {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 54%;
+  gap: 20px;
+  padding: 20px 10px;
+  max-width: 1200px;
+}
+.solution-container .flex-container .esp-row {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+.solution-container .flex-container .esp-row .extra-flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+.solution-container .flex-container .esp-row .extra-flex .icon-container {
+  width: 27%;
+  min-width: 150px;
+  text-align: center;
+  flex-grow: 1;
+}
+.solution-container .flex-container .esp-row .extra-flex .icon-container img {
+  width: 150px;
+}
+.solution-container .flex-container .esp-row .extra-flex .desc {
+  width: 70%;
+  flex-grow: 1;
+}
+.solution-container .flex-container .esp-row .extra-flex .desc h4 {
+  margin-top: 0;
+}
+.how-we-work {
+  display: block;
+  margin: 0 auto;
+  padding: 100px 100px 60px 100px;
+  background-color: #fbfbfb;
+}
+.how-we-work h2 {
+  display: block;
+  margin: 0px auto  100px auto;
+  max-width: 1200px;
+  text-align: center;
+  text-decoration: underline;
+}
+.how-we-work .flex-container {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  gap: 20px;
+  padding: 20px 10px;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+.how-we-work .flex-container .card {
+  background-color: white;
+  width: 20%;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 270px;
+  min-width: 260px;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+}
+.how-we-work .flex-container .card .step {
+  display: block;
+  width: 100px;
+  margin: 0 auto 0 auto;
+  line-height: 100px;
+  background-color: #febc11;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+  top: -60px;
+}
+.how-we-work .flex-container .card .step .number {
+  margin: 0;
+  text-decoration: none;
+}
+.how-we-work .flex-container .card .desc {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: -20px;
+}
+.how-we-work .flex-container .card .desc h3 {
+  margin: 0;
 }
