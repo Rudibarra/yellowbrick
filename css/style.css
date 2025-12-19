@@ -20,6 +20,11 @@ h4 {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
+.section-title {
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 p {
   font-size: 1.2em;
 }
@@ -30,12 +35,21 @@ p {
   font-size: 0.6em;
 }
 .cta {
+  display: inline-block;
   padding: 0.8em 1.9em;
   border-radius: 8px;
   border: 1px solid transparent;
   background-color: #febc11;
   font-size: 1.3em;
   margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+}
+.cta:hover {
+  background-color: #e5a90f;
+  box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
 }
 .tags {
   display: block;
@@ -108,7 +122,7 @@ p {
   box-sizing: border-box;
   background-color: #fbfbfb;
 }
-.pain-container h2 {
+.pain-container .section-title {
   display: block;
   margin: 0px auto 50px auto;
   max-width: 1200px;
@@ -158,7 +172,7 @@ p {
   box-sizing: border-box;
   background-color: white;
 }
-.solution-container h2 {
+.solution-container .section-title {
   display: block;
   margin: 0px auto 50px auto;
   max-width: 1200px;
@@ -211,7 +225,7 @@ p {
   padding: 100px 100px 60px 100px;
   background-color: #fbfbfb;
 }
-.how-we-work h2 {
+.how-we-work .section-title {
   display: block;
   margin: 0px auto  100px auto;
   max-width: 1200px;
@@ -260,6 +274,8 @@ p {
 .how-we-work .flex-container .card .step .number {
   margin: 0;
   text-decoration: none;
+  font-size: 1.9em;
+  font-weight: bold;
 }
 .how-we-work .flex-container .card .desc {
   display: block;
@@ -269,4 +285,143 @@ p {
 }
 .how-we-work .flex-container .card .desc h3 {
   margin: 0;
+}
+.brands {
+  display: block;
+  margin: 0 auto 0px auto;
+  width: 100%;
+  padding: 100px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.brands .section-title {
+  display: block;
+  margin: 0px auto 70px auto;
+  max-width: 1200px;
+  text-align: center;
+  text-decoration: underline;
+  box-sizing: border-box;
+}
+.brands .flex-container {
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 1200px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.brands .flex-container .card {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding: 20px;
+  height: 180px;
+  width: 30%;
+  min-width: 350px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.72);
+}
+.brands .flex-container .card img {
+  max-width: 260px;
+  margin: 0;
+  padding: 0;
+}
+.contact {
+  display: block;
+  margin: 0 auto 0px auto;
+  width: 100%;
+  padding: 1.5em;
+  box-sizing: border-box;
+  background-image: url(../img/contactBG.png);
+  background-repeat: no-repeat;
+}
+.contact .section-title {
+  display: block;
+  margin: 100px auto 50px auto;
+  max-width: 1200px;
+  text-align: center;
+  text-decoration: underline;
+  box-sizing: border-box;
+  color: white;
+}
+.contact h3 {
+  display: block;
+  width: 40%;
+  margin: 0px auto 20px auto;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  font-weight: normal;
+}
+.contact .form-container {
+  display: block;
+  width: 100%;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 500px;
+}
+.contact .form-container .yb-form {
+  display: block;
+  box-sizing: border-box;
+}
+.contact .form-container .yb-field {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+}
+.contact .form-container .yb-field input,
+.contact .form-container .yb-field select,
+.contact .form-container .yb-field textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 75%;
+  padding: 15px;
+  border: none !important;
+  border-radius: 4px;
+  font-size: 1.2em;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+.contact .form-container .yb-field input:active,
+.contact .form-container .yb-field select:active,
+.contact .form-container .yb-field textarea:active,
+.contact .form-container .yb-field input:focus-visible,
+.contact .form-container .yb-field select:focus-visible,
+.contact .form-container .yb-field textarea:focus-visible {
+  border: none !important;
+  outline: none;
+}
+.contact .form-container .yb-field input::placeholder,
+.contact .form-container .yb-field select::placeholder,
+.contact .form-container .yb-field textarea::placeholder {
+  color: black;
+}
+.contact .form-container .yb-field textarea {
+  resize: none;
+}
+.contact .form-container .cta {
+  margin-top: 20px;
+  width: 75%;
+  font-weight: bold;
+}
+.contact .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
