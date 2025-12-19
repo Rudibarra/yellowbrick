@@ -70,7 +70,7 @@ p {
   width: 100%;
   padding: 1.5em;
   box-sizing: border-box;
-  background-image: url(../img/heroBg01.png);
+  background-image: url(../img/heroBG01.png);
   background-repeat: no-repeat;
 }
 .hero-container .flex-container {
