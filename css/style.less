@@ -92,7 +92,7 @@ p{
     //border: 1px solid #f81717;
     padding: 1.5em;
     box-sizing: border-box;
-    background-image: url(../img/HeroBg.png);
+    background-image: url(../img/heroBg.png);
     background-repeat: no-repeat;
     //background-size: 100% 100%;
 
@@ -503,9 +503,10 @@ p{
                 font-weight: normal;
                 
 
-                &:active, &:focus-visible{
+                &:focus, &:focus-visible{
                     border: none !important;
-                    outline: none;
+                    outline: 3px solid rgba(254, 188, 17, 0.6);
+                    outline-offset: 1px;
                 }
 
                 &::placeholder{

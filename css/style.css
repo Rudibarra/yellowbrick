@@ -70,7 +70,7 @@ p {
   width: 100%;
   padding: 1.5em;
   box-sizing: border-box;
-  background-image: url(../img/HeroBg.png);
+  background-image: url(../img/heroBg.png);
   background-repeat: no-repeat;
 }
 .hero-container .flex-container {
@@ -392,14 +392,15 @@ p {
   font-family: sans-serif;
   font-weight: normal;
 }
-.contact .form-container .yb-field input:active,
-.contact .form-container .yb-field select:active,
-.contact .form-container .yb-field textarea:active,
+.contact .form-container .yb-field input:focus,
+.contact .form-container .yb-field select:focus,
+.contact .form-container .yb-field textarea:focus,
 .contact .form-container .yb-field input:focus-visible,
 .contact .form-container .yb-field select:focus-visible,
 .contact .form-container .yb-field textarea:focus-visible {
   border: none !important;
-  outline: none;
+  outline: 3px solid rgba(254, 188, 17, 0.6);
+  outline-offset: 1px;
 }
 .contact .form-container .yb-field input::placeholder,
 .contact .form-container .yb-field select::placeholder,
